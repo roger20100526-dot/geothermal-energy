@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>地熱能源：來自地球深處的力量</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;700&family=Noto+Sans+TC:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/styles.css">
+<link rel="icon" type="image/x-icon" href="img/picture.png">
+</head>
+<body>
+<!-- HERO -->
+<section class="hero">
+  <div class="lava-layer"></div>
+  <!-- Particles -->
+  <div class="particle" style="left:20%;animation-duration:6s;animation-delay:0s;--drift:20px;bottom:0"></div>
+  <div class="particle" style="left:35%;animation-duration:8s;animation-delay:1s;--drift:-15px;bottom:0"></div>
+  <div class="particle" style="left:50%;animation-duration:5s;animation-delay:0.5s;--drift:30px;bottom:0"></div>
+  <div class="particle" style="left:65%;animation-duration:7s;animation-delay:1.8s;--drift:-25px;bottom:0"></div>
+  <div class="particle" style="left:80%;animation-duration:9s;animation-delay:0.3s;--drift:10px;bottom:0"></div>
+  <div class="particle" style="left:10%;animation-duration:7.5s;animation-delay:2.1s;--drift:18px;bottom:0"></div>
+  <div class="particle" style="left:90%;animation-duration:6.5s;animation-delay:0.8s;--drift:-20px;bottom:0"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">能源探索系列</p>
+    <h1 class="hero-title">來自<span>地球深處</span>的力量<br>地熱能源</h1>
+    <p class="hero-subtitle">地球誕生以來已儲存了四十六億年的熱能。這股沉默的巨力，正在成為人類永續未來最重要的能量之一。</p>
+  </div>
+  <div class="scroll-cue">向下探索</div>
+</section>
+<!-- NAV -->
+<nav>
+  <ul>
+    <li><a href="#principle">運作原理</a></li>
+    <li><a href="#benefits">社會效益</a></li>
+    <li><a href="#case">深度案例</a></li>
+    <li><a href="#impact">後續影響</a></li>
+    <li><a href="#reflection">最終結語</a></li>
+  </ul>
+</nav>
+<!-- SECTION 1: PRINCIPLE -->
+<div class="diagram-bg" id="principle">
+  <div class="diagram-wrap">
+    <p class="section-label">運作原理</p>
+    <h2 class="section-title">地球是一座永不熄滅的鍋爐</h2>
+    <p class="lead">地熱能（Geothermal Energy）來自地球內部的熱能，源自於行星形成時的重力收縮熱以及放射性元素衰變產生的熱量。越往地心，溫度越高——地心溫度估計達攝氏 5,100 度，與太陽表面相近。</p>
+    <!-- SVG Diagram -->
+    <div class="earth-diagram">
+        <!-- Underground layers -->
+        <rect x="0" y="0" width="700" height="420" fill="#1a0f0a"/>
+        <!-- Sky -->
+        <rect x="0" y="0" width="700" height="80" fill="#0d1a2e" rx="0"/>
+        <!-- Ground surface -->
+        <rect x="0" y="80" width="700" height="30" fill="#3d2a1a"/>
+        <text x="30" y="99" font-family="Noto Sans TC, sans-serif" font-size="11" fill="#c8a890">地面（地表層）</text>
+        <!-- Layer 1: upper crust -->
+        <rect x="0" y="110" width="700" height="70" fill="#4a3020"/>
+        <text x="30" y="152" font-family="Noto Sans TC, sans-serif" font-size="11" fill="#a07860">上部地殼　150–200°C</text>
+        <!-- Layer 2: hot rock -->
+        <rect x="0" y="180" width="700" height="80" fill="#6b3018"/>
+        <text x="30" y="228" font-family="Noto Sans TC, sans-serif" font-size="11" fill="#e8a060">熱岩層　300–400°C</text>
+        <!-- Layer 3: magma -->
+        <rect x="0" y="260" width="700" height="90" fill="#8b2800"/>
+        <text x="30" y="312" font-family="Noto Sans TC, sans-serif" font-size="11" fill="#fac070">岩漿層　600°C+</text>
+        <!-- Layer 4: mantle -->
+        <rect x="0" y="350" width="700" height="70" fill="#a01800"/>
+        <text x="30" y="395" font-family="Noto Sans TC, sans-serif" font-size="11" fill="#ffd090">地函　1300°C+</text>
+        <!-- Power Plant surface -->
+        <rect x="460" y="45" width="120" height="55" rx="4" fill="#2c2420" stroke="#c94a1a" stroke-width="1.5"/>
+        <rect x="490" y="30" width="20" height="25" fill="#3a3030" stroke="#c94a1a" stroke-width="1"/>
+        <!-- chimney smoke -->
+        <ellipse cx="500" cy="25" rx="8" ry="5" fill="rgba(200,200,200,0.2)"/>
+        <ellipse cx="502" cy="15" rx="6" ry="4" fill="rgba(200,200,200,0.1)"/>
+        <text x="475" y="78" font-family="Noto Sans TC, sans-serif" font-size="10" fill="#f5a03a" text-anchor="middle">地熱電廠</text>
+        <!-- Turbine symbol inside -->
+        <circle cx="520" cy="65" r="8" fill="none" stroke="#f5a03a" stroke-width="1.5"/>
+        <line x1="520" y1="57" x2="520" y2="73" stroke="#f5a03a" stroke-width="1.5"/>
+        <line x1="512" y1="65" x2="528" y2="65" stroke="#f5a03a" stroke-width="1.5"/>
+        <!-- Injection well (left pipe) -->
+        <rect x="380" y="70" width="12" height="290" rx="4" fill="#2a4060" stroke="#3a6b7a" stroke-width="1"/>
+        <text x="374" y="65" font-family="Noto Sans TC, sans-serif" font-size="10" fill="#3a9bba" text-anchor="middle">注水井</text>
+        <!-- Production well (right pipe) -->
+        <rect x="440" y="70" width="12" height="230" rx="4" fill="#602010" stroke="#c94a1a" stroke-width="1"/>
+        <text x="448" y="65" font-family="Noto Sans TC, sans-serif" font-size="10" fill="#f5a03a" text-anchor="middle">生產井</text>
+        <!-- Water going down (blue dots) -->
+        <circle cx="386" cy="120" r="3.5" fill="#4ab0d0" opacity="0.9"/>
+        <circle cx="386" cy="155" r="3" fill="#4ab0d0" opacity="0.7"/>
+        <circle cx="386" cy="190" r="3" fill="#4ab0d0" opacity="0.6"/>
+        <circle cx="386" cy="225" r="2.5" fill="#4ab0d0" opacity="0.5"/>
+        <!-- Steam going up (orange dots) -->
+        <circle cx="446" cy="270" r="3.5" fill="#f5a03a" opacity="0.9"/>
+        <circle cx="446" cy="230" r="3.5" fill="#f5a03a" opacity="0.8"/>
+        <circle cx="446" cy="190" r="3" fill="#f5a03a" opacity="0.7"/>
+        <circle cx="446" cy="150" r="3" fill="#f5a03a" opacity="0.6"/>
+        <circle cx="446" cy="110" r="2.5" fill="#f5a03a" opacity="0.5"/>
+        <!-- Heat exchange zone -->
+        <ellipse cx="413" cy="355" rx="55" ry="22" fill="rgba(201,74,26,0.5)" stroke="#c94a1a" stroke-width="1.5"/>
+        <text x="413" y="360" font-family="Noto Sans TC, sans-serif" font-size="10" fill="#ffd090" text-anchor="middle">熱能交換區</text>
+        <!-- Arrow labels -->
+        <text x="355" y="200" font-family="Noto Sans TC, sans-serif" font-size="10" fill="#4ab0d0">冷水</text>
+        <text x="355" y="215" font-family="Noto Sans TC, sans-serif" font-size="10" fill="#4ab0d0">注入 ↓</text>
+        <text x="462" y="200" font-family="Noto Sans TC, sans-serif" font-size="10" fill="#f5a03a">蒸汽</text>
+        <text x="462" y="215" font-family="Noto Sans TC, sans-serif" font-size="10" fill="#f5a03a">上升 ↑</text>
+        <!-- Power line -->
+        <line x1="460" y1="55" x2="400" y2="30" stroke="#f5d060" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <line x1="400" y1="30" x2="340" y2="45" stroke="#f5d060" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <circle cx="340" cy="45" r="4" fill="#f5d060"/>
+        <text x="290" y="42" font-family="Noto Sans TC, sans-serif" font-size="10" fill="#f5d060">輸電線路</text>
+        <!-- City symbol -->
+        <rect x="160" y="48" width="12" height="28" rx="1" fill="#2a3a4a" stroke="#4a7090" stroke-width="0.5"/>
+        <rect x="176" y="55" width="10" height="21" rx="1" fill="#2a3a4a" stroke="#4a7090" stroke-width="0.5"/>
+        <rect x="190" y="52" width="8" height="24" rx="1" fill="#2a3a4a" stroke="#4a7090" stroke-width="0.5"/>
+        <text x="175" y="88" font-family="Noto Sans TC, sans-serif" font-size="10" fill="#8ab0c0" text-anchor="middle">城市供電</text>
+      </svg>
+    </div>
+    <!-- STEPS -->
+    <div class="steps">
+      <div class="step-card">
+        <div class="step-num">01</div>
+        <div class="step-title">鑽探注水</div>
+        <div class="step-body">向地下鑽探數千公尺，注入冷水（或使用天然熱水層）進入高溫岩層。</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">02</div>
+        <div class="step-title">地熱加熱</div>
+        <div class="step-body">水在深部被岩層加熱至高溫，部分轉化為高壓蒸汽或熱水。</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">03</div>
+        <div class="step-title">蒸汽上升</div>
+        <div class="step-body">高壓蒸汽沿生產井上升，帶著龐大的熱能到達地面設施。</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">04</div>
+        <div class="step-title">發電轉換</div>
+        <div class="step-body">蒸汽驅動渦輪機旋轉，帶動發電機產生電力，輸送給用戶。</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="divider"></div>
+<!-- SECTION 2: BENEFITS -->
+<section id="benefits" class="section">
+  <p class="section-label">社會效益</p>
+  <h2 class="section-title">地熱對人類社會的貢獻</h2>
+  <p class="lead">地熱能具備再生能源中罕見的特質——全天候穩定發電，不受天氣影響，碳排放極低，且開發後可持續使用數十年。這使它成為社會轉型的重要基石。</p>
+  <div class="stat-row">
+    <div class="stat-box">
+      <div class="stat-num">90%</div>
+      <div class="stat-label">冰島電力及暖氣<br>來自地熱與水力</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">0.04</div>
+      <div class="stat-label">地熱發電每度<br>CO₂排放量（kg）</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">30年</div>
+      <div class="stat-label">地熱電廠<br>平均使用壽命</div>
+    </div>
+  </div>
+  <div class="benefits-grid">
+    <div class="benefit-card">
+      <div class="benefit-icon">⚡</div>
+      <div class="benefit-title">基載電力的穩定供應</div>
+      <div class="benefit-body">太陽能與風能受天氣制約，地熱能不受此限。它能提供 24 小時不間斷的基載電力，是電網穩定的重要支柱，減少對化石燃料調峰發電的依賴。</div>
+    </div>
+    <div class="benefit-card green">
+      <div class="benefit-icon">🌿</div>
+      <div class="benefit-title">極低碳排放</div>
+      <div class="benefit-body">與燃煤相比，地熱發電的生命週期碳排放僅為其 1/30 左右。使用現代封閉循環技術甚至可近乎零排放，是真正的低碳能源。</div>
+    </div>
+    <div class="benefit-card blue">
+      <div class="benefit-icon">🏭</div>
+      <div class="benefit-title">多元化的應用場景</div>
+      <div class="benefit-body">除發電外，地熱可直接用於區域供暖、溫室農業、魚類養殖、工業製程，以及溫泉旅遊。多元應用大幅提升能源利用效率。</div>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon">💼</div>
+      <div class="benefit-title">帶動地方就業與發展</div>
+      <div class="benefit-body">地熱開發需要大量在地工程、維運人才，不易外包至海外，能有效創造在地就業機會，推動偏遠地區或島嶼社群的經濟發展。</div>
+    </div>
+    <div class="benefit-card green">
+      <div class="benefit-icon">🔒</div>
+      <div class="benefit-title">強化能源自主安全</div>
+      <div class="benefit-body">地熱資源存在於國土之下，不受國際燃料市場波動影響，減少對進口能源的依賴，對能源安全具有戰略意義，尤其對島國而言更為關鍵。</div>
+    </div>
+    <div class="benefit-card blue">
+      <div class="benefit-icon">🌋</div>
+      <div class="benefit-title">台灣的潛在優勢</div>
+      <div class="benefit-body">台灣位於環太平洋火環帶，地熱資源豐富。台東、宜蘭等地已知地熱熱點，潛在裝置容量估計可達數百 MW，若開發得宜將顯著改善能源結構。</div>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+<!-- SECTION 3: CASE STUDY -->
+<div class="case-bg" id="case">
+  <div class="section" style="padding-top: 5rem; padding-bottom: 3rem;">
+    <div class="case-header">
+      <div class="case-badge">案例研究</div>
+      <div class="case-title-block">
+        <p class="section-label">多角度案例分析</p>
+        <h2 class="section-title">宜蘭清水地熱案例：<br>同一片土地，不同的眼睛</h2>
+      </div>
+    </div>
+    <p class="body-text">宜蘭縣仁澤（清水）地熱是台灣最具代表性的地熱開發現場，也是爭議與期待並存的縮影。2020 年前後，台灣電力公司與民間業者陸續在此展開開發計劃，同一片蒸騰著白霧的山谷，卻在不同人眼中呈現出截然不同的風景。以下我們從六個立場，深入還原這場複雜的社會對話。</p>
+    <div class="quote-block">
+      <p class="quote-text">「沒有哪個能源計劃是沒有代價的。真正的問題從來不是『要不要開發』，而是『誰來決定、誰來受益、誰來承擔』。」</p>
+    </div>
+    <!-- PERSPECTIVE TABS -->
+    <div class="persp-nav">
+      <button class="persp-btn active" onclick="showPersp(0)">🏛️ 政府視角</button>
+      <button class="persp-btn" onclick="showPersp(1)">🌿 環保團體</button>
+      <button class="persp-btn" onclick="showPersp(2)">🏘️ 在地居民</button>
+      <button class="persp-btn" onclick="showPersp(3)">🏭 能源產業</button>
+      <button class="persp-btn" onclick="showPersp(4)">🪶 原住民族</button>
+      <button class="persp-btn" onclick="showPersp(5)">🌍 國際比較</button>
+    </div>
+    <!-- PERSPECTIVE PANELS -->
+    <div class="persp-panels">
+      <!-- 0: Government -->
+      <div class="persp-panel active" id="p0">
+        <div class="persp-header gov">
+          <div class="persp-tag-row">
+            <span class="persp-role">政府 ／ 能源主管機關</span>
+            <span class="persp-stance stance-pro">積極推動</span>
+          </div>
+          <h3 class="persp-title">能源轉型的戰略棋子</h3>
+        </div>
+        <div class="persp-content">
+          <p class="body-text">從政府的視角，宜蘭清水地熱不只是一座電廠，而是台灣「2050 淨零碳排」路徑圖中的關鍵一塊拼圖。經濟部能源署的規劃目標是在 2030 年前將地熱裝置容量提升至 200MW，清水地熱作為技術示範場域，具有標竿意義。</p>
+          <p class="body-text">政府的論述邏輯清晰：台灣高度依賴進口能源（能源自給率不足 3%），在俄烏戰爭後全球能源市場劇烈波動的背景下，每增加一分國內可再生能源，就是減少一分地緣政治風險。地熱因其穩定的基載特性，被視為彌補太陽能與風能間歇性缺口的最佳選項。</p>
+          <div class="persp-callout gov-callout">
+            <div class="callout-label">政策里程碑</div>
+            <p>2023 年《地熱能源發展條例》草案送立法院，首次為地熱開發建立專屬法律框架，解決過去套用礦業法的困境。條例明定地熱資源屬國家所有、開發者須申請特許、分潤機制須惠及在地社區。</p>
+          </div>
+          <p class="body-text">然而批評者指出，政府的規劃往往停留在中央層次，缺乏與地方實際溝通的機制。行政院訂下的裝置容量目標，與地方政府、原住民族委員會之間的協調，至今仍存在顯著落差。「從台北看清水」與「住在清水旁」，是截然不同的兩種感受。</p>
+        </div>
+      </div>
+      <!-- 1: Environmentalists -->
+      <div class="persp-panel" id="p1">
+        <div class="persp-header eco">
+          <div class="persp-tag-row">
+            <span class="persp-role">環境保護團體</span>
+            <span class="persp-stance stance-mix">有條件支持</span>
+          </div>
+          <h3 class="persp-title">不是所有「綠能」都是綠的</h3>
+        </div>
+        <div class="persp-content">
+          <p class="body-text">環保團體的立場比外界想像中複雜。多數環保人士對地熱的氣候效益持肯定態度——相比太陽光電板的製造污染、離岸風機對鳥類的威脅，地熱的環境足跡確實相對小。但「有條件支持」並不等於無條件贊同。</p>
+          <p class="body-text">台灣環境資訊協會等團體關注的焦點在於：清水地熱開發區域緊鄰蘭陽溪上游生態敏感帶，開發過程中的鑽井泥漿處理、地面設施建設對當地植被的破壞，以及硫化氫（H₂S）氣體排放對下風處聚落的健康影響，都需要嚴格的環評把關。</p>
+          <div class="persp-callout eco-callout">
+            <div class="callout-label">核心訴求</div>
+            <p>要求地熱開發採用封閉循環系統（避免熱水直接排入溪流）、定期公開空氣品質與水文監測數據、建立獨立第三方環境稽核機制，並要求開發商在施工前完成完整生態基線調查。</p>
+          </div>
+          <p class="body-text">值得一提的是，部分環保人士也對「以地熱取代核電」的論述提出質疑——他們認為不應將地熱與特定能源政策捆綁，地熱本身的開發價值應獨立於核電爭議之外評估。混淆政策議題，反而可能讓地熱背負不必要的政治包袱。</p>
+        </div>
+      </div>
+      <!-- 2: Local residents -->
+      <div class="persp-panel" id="p2">
+        <div class="persp-header local">
+          <div class="persp-tag-row">
+            <span class="persp-role">在地居民 ／ 仁澤溫泉區業者</span>
+            <span class="persp-stance stance-neg">高度憂慮</span>
+          </div>
+          <h3 class="persp-title">溫泉是我們的生計，不是你的資源</h3>
+        </div>
+        <div class="persp-content">
+          <p class="body-text">仁澤溫泉的居民與業者，是這場開發討論中最直接受影響、卻往往聲音最小的一群。許多家庭三代靠溫泉維生，旅館、餐廳、浴池構成了整個社區的經濟命脈。地熱電廠的鑽探用水，與溫泉業者共享同一套地下熱水系統，這不是抽象的政策問題，而是切實的生存競爭。</p>
+          <p class="body-text">居民的疑慮集中在幾點：深部鑽探可能改變地下水壓，導致溫泉水量減少甚至枯竭；發電廠運轉的低頻噪音與蒸汽排放氣味，會影響旅遊業者的服務品質；一旦地熱電廠進駐，土地使用性質改變，旅館的再投資意願也會下降。</p>
+          <div class="persp-callout local-callout">
+            <div class="callout-label">居民的聲音（2022 年公聽會紀錄摘要）</div>
+            <p>「我們不反對綠能，我們反對的是沒有人來問我們。從頭到尾都是上面的人在談，等到要動工才叫我們來開公聽會，這叫什麼溝通？」— 仁澤地區旅館業者代表</p>
+          </div>
+          <p class="body-text">部分居民也提出了建設性的替代方案：能否以「共同開發、利潤分享」的模式，讓社區持股地熱電廠，而非單純的外來資本開發？這種思維在冰島、肯亞的地熱開發經驗中已有成功先例，但在台灣的政策框架中尚未成形。</p>
+        </div>
+      </div>
+      <!-- 3: Energy Industry -->
+      <div class="persp-panel" id="p3">
+        <div class="persp-header biz">
+          <div class="persp-tag-row">
+            <span class="persp-role">民間能源開發業者</span>
+            <span class="persp-stance stance-pro">積極投入</span>
+          </div>
+          <h3 class="persp-title">商業邏輯下的地熱算盤</h3>
+        </div>
+        <div class="persp-content">
+          <p class="body-text">台灣近年出現多家地熱新創與傳統能源公司投入地熱探勘，包括台灣地熱資源開發公司、宜蘭縣政府與台電的合作案，以及若干國際業者的技術引進計劃。從商業視角來看，地熱在台灣仍是一個高風險、高報酬的長期賭注。</p>
+          <p class="body-text">業者面臨的核心挑戰是「鑽探失敗風險」——地熱開發必須先鑿井才能確認地下熱流是否達到商業開採標準，而每口深度 2,000–3,000 公尺的地熱井，造價動輒新台幣一億元以上，且失敗率不低。在缺乏政府擔保或風險分攤機制的情況下，私人資本的投入意願受到嚴重壓抑。</p>
+          <div class="persp-callout biz-callout">
+            <div class="callout-label">業者最需要的三件事</div>
+            <p><strong>① 穩定的購電保障</strong>：確保長期躉購電價（FIT），讓投資回收期可預測。<br><strong>② 鑽探風險基金</strong>：政府設立「地熱探勘風險分攤基金」，由公私共同承擔探勘失敗損失。<br><strong>③ 簡化行政流程</strong>：整合環評、土地、水利、原民諮商等多頭審查，設立單一窗口。</p>
+          </div>
+          <p class="body-text">值得關注的是，部分業者已開始探索「地熱＋溫泉」的共生模式——將地熱發電後的尾水（仍有 60–80°C 的溫度）供給溫泉業者使用，既解決地熱廢水問題，也為溫泉業者補充熱源。這種雙贏設計若能推廣，或許是打破地熱與溫泉業者對立僵局的鑰匙。</p>
+        </div>
+      </div>
+      <!-- 4: Indigenous -->
+      <div class="persp-panel" id="p4">
+        <div class="persp-header indigenous">
+          <div class="persp-tag-row">
+            <span class="persp-role">原住民族 ／ 泰雅族、噶瑪蘭族</span>
+            <span class="persp-stance stance-neg">保留與抵制</span>
+          </div>
+          <h3 class="persp-title">土地不只是資源，是我們的根</h3>
+        </div>
+        <div class="persp-content">
+          <p class="body-text">宜蘭仁澤地區的地熱開發，涉及泰雅族傳統領域。依據《原住民族基本法》第 21 條，政府或私人於原住民族土地從事土地開發、資源利用，應取得原住民族或部落的同意或參與，並分享相關利益。然而在實際執行中，這項規定常被以「諮商」代替「同意」，形式大於實質。</p>
+          <p class="body-text">泰雅族部落對地熱開發的態度並非鐵板一塊。部分族人歡迎能帶來就業機會和基礎建設的開發；另一部分則堅定認為，山林溪流的熱能是祖靈守護之地的一部分，不應以商業邏輯進行開採。這種分歧，本身就反映了原住民族內部在傳統與發展之間的深層張力。</p>
+          <div class="persp-callout indigenous-callout">
+            <div class="callout-label">關鍵法律爭議</div>
+            <p>「諮商」（consultation）≠「同意」（consent）。《原基法》第 21 條的「諮商同意」，在實踐中究竟是要求開發者必須獲得部落同意才能進行，還是諮商過後即可推進？法律文字的模糊，造成政府、業者、部落三方各自解讀，衍生大量爭議。</p>
+          </div>
+          <p class="body-text">國際上，紐西蘭毛利族對地熱資源的共同管理模式，被視為值得借鑑的案例——毛利族擁有地熱電廠的部分股權，並在管理委員會中享有代表席位，將「土地所有者」從被動的受影響者，轉化為主動的共同決策者。這種模式若能引入台灣，或許才是真正解決原住民族地熱爭議的長效之道。</p>
+        </div>
+      </div>
+      <!-- 5: International Comparison -->
+      <div class="persp-panel" id="p5">
+        <div class="persp-header intl">
+          <div class="persp-tag-row">
+            <span class="persp-role">國際比較視野</span>
+            <span class="persp-stance stance-mix">借鏡與警示</span>
+          </div>
+          <h3 class="persp-title">世界各地，同一片地熱，不同的故事</h3>
+        </div>
+        <div class="persp-content">
+          <div class="intl-grid">
+            <div class="intl-card">
+              <div class="intl-flag">🇮🇸</div>
+              <div class="intl-country">冰島</div>
+              <div class="intl-subtitle">成功典範</div>
+              <p class="intl-body">石油危機催生政策決心，地熱現提供全國 66% 電力與 90% 供暖。關鍵成功因素：國家長期投資、社會高度信任政府、地廣人稀無土地衝突。但冰島模式不能直接複製——它的成功有特定的地質條件與社會脈絡。</p>
+            </div>
+            <div class="intl-card">
+              <div class="intl-flag">🇰🇷</div>
+              <div class="intl-country">韓國浦項</div>
+              <div class="intl-subtitle">沉痛警示</div>
+              <p class="intl-body">2017 年，EGS 試驗電廠的注水操作被認為誘發規模 5.4 地震，造成 135 人受傷、超過 1,700 棟建築受損。韓國政府最終永久關閉該電廠，並賠償逾 1,100 億韓元。此案讓全球重新審視 EGS 技術的地震誘發風險監管標準。</p>
+            </div>
+            <div class="intl-card">
+              <div class="intl-flag">🇰🇪</div>
+              <div class="intl-country">肯亞奧卡利亞</div>
+              <div class="intl-subtitle">發展中國家的啟示</div>
+              <p class="intl-body">非洲最大地熱電廠，裝置容量超過 800MW，為肯亞提供約 45% 電力。關鍵在於政府成立國家地熱開發公司（GDC），由公部門承擔探勘風險，再將已驗證的熱田租給私人業者開發。這種「風險分攤」模式值得台灣參考。</p>
+            </div>
+            <div class="intl-card">
+              <div class="intl-flag">🇳🇿</div>
+              <div class="intl-country">紐西蘭</div>
+              <div class="intl-subtitle">原住民共治模式</div>
+              <p class="intl-body">毛利族擁有部分地熱電廠股權，且在資源管理決策中享有法定參與權。地熱被視為毛利族「taonga」（珍貴資源）而受文化保護，但同時也透過談判成為族人的經濟資產。這是「文化保護」與「經濟發展」並存的難得範例。</p>
+            </div>
+            <div class="intl-card">
+              <div class="intl-flag">🇮🇩</div>
+              <div class="intl-country">印尼</div>
+              <div class="intl-subtitle">潛力與困境並存</div>
+              <p class="intl-body">擁有全球最大地熱潛力（約 29GW），卻僅開發 2.4GW。障礙與台灣高度相似：大量地熱位於保護區內，法規限制開發；地方政府與中央之間的利益分配機制不完善；基礎設施缺乏，偏遠地區電廠難以連接電網。印尼的困境是台灣的前車之鑑。</p>
+            </div>
+            <div class="intl-card">
+              <div class="intl-flag">🇯🇵</div>
+              <div class="intl-country">日本</div>
+              <div class="intl-subtitle">溫泉業者的妥協之道</div>
+              <p class="intl-body">日本地熱潛力居全球第三，卻因溫泉旅館業者強烈反對，開發長期停滯。2012 年後政府修法允許在國立公園內進行小規模地熱探勘，並建立溫泉業者補償機制。這種「讓步換共識」的過程雖緩慢，卻是民主社會中處理利益衝突的真實樣貌。</p>
+            </div>
+          </div>
+          <div class="persp-callout intl-callout" style="margin-top:2rem;">
+            <div class="callout-label">跨國比較的核心洞見</div>
+            <p>成功的地熱開發，從來不只是技術問題。冰島有地廣人稀的優勢、肯亞有國家承擔風險的勇氣、紐西蘭有原住民共治的創造力、日本有漫長但真實的社會協商。台灣需要的，或許是上述模式的混合體——而這個混合的過程，本身就需要時間、誠意與制度設計。</p>
+          </div>
+        </div>
+      </div>
+    </div><!-- end persp-panels -->
+    <!-- SYNTHESIS -->
+    <div style="margin-top: 3.5rem;">
+      <h3 style="font-family:'Noto Serif TC',serif; font-size:1.5rem; color:var(--stone); margin-bottom:1rem;">六個視角之後，我們看到了什麼？</h3>
+      <p class="body-text">將這六個視角並排比較，我們會發現一件有趣的事：幾乎每個立場都有其合理性，也都有其盲點。政府的宏觀規劃忽略了在地微觀感受；環保團體的堅守有時變成完美主義的阻礙；居民的守護有時混雜著對改變的恐懼；業者的樂觀有時掩蓋了對風險轉嫁的渴望；原住民族的抵抗有時是最深刻的智慧，有時也需要對話的空間；國際案例提供了參照，卻無法直接移植。</p>
+      <p class="body-text">能源轉型從來不是一個技術問題，它是一個關於「我們想成為什麼樣的社會」的政治問題。宜蘭清水這片山谷蒸騰的白霧，折射的正是台灣社會在永續與公正之間，尋找平衡點的艱難旅程。</p>
+    </div>
+  </div>
+</div>
+<script>
+  function showPersp(index) {
+    document.querySelectorAll('.persp-panel').forEach((p, i) => {
+      p.classList.toggle('active', i === index);
+    });
+    document.querySelectorAll('.persp-btn').forEach((b, i) => {
+      b.classList.toggle('active', i === index);
+    });
+  }
+</script>
+<!-- SECTION 4: IMPACT -->
+<section id="impact" class="section">
+  <p class="section-label">後續影響分析</p>
+  <h2 class="section-title">地熱開發的多重衝擊</h2>
+  <p class="lead">地熱開發並非百利而無一害。全面、誠實地評估其社會、環境、經濟影響，是制定合理政策的前提。</p>
+  <table class="impact-table">
+    <thead>
+      <tr>
+        <th>影響面向</th>
+        <th>正面效果</th>
+        <th>潛在風險</th>
+        <th>評估</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>能源安全</strong></td>
+        <td>減少進口石油、天然氣依賴，增強自主性</td>
+        <td>初期資本投入高，技術依賴外援</td>
+        <td><span class="tag tag-pos">正面</span></td>
+      </tr>
+      <tr>
+        <td><strong>氣候變遷</strong></td>
+        <td>低碳排放，替代化石燃料</td>
+        <td>H₂S 等火山氣體的排放管理</td>
+        <td><span class="tag tag-pos">正面</span></td>
+      </tr>
+      <tr>
+        <td><strong>地質風險</strong></td>
+        <td>技術成熟可控管</td>
+        <td>注水可能誘發輕微地震（EGS 系統尤甚）</td>
+        <td><span class="tag tag-mix">需評估</span></td>
+      </tr>
+      <tr>
+        <td><strong>水資源</strong></td>
+        <td>封閉循環系統可回收大部分用水</td>
+        <td>開放循環系統消耗地下水，影響溫泉資源</td>
+        <td><span class="tag tag-mix">需管理</span></td>
+      </tr>
+      <tr>
+        <td><strong>地方經濟</strong></td>
+        <td>創造就業，帶動觀光，降低能源成本</td>
+        <td>可能衝擊傳統溫泉業者的利益</td>
+        <td><span class="tag tag-pos">整體正面</span></td>
+      </tr>
+      <tr>
+        <td><strong>原住民族權益</strong></td>
+        <td>提供在地能源、就業機會</td>
+        <td>傳統領域開發需完整諮詢同意程序</td>
+        <td><span class="tag tag-neg">須謹慎</span></td>
+      </tr>
+      <tr>
+        <td><strong>電力系統</strong></td>
+        <td>提供穩定基載，彌補太陽能、風能的間歇性</td>
+        <td>地熱選址受地質條件限制，不能任意選地</td>
+        <td><span class="tag tag-pos">正面</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="body-text">韓國在 2017 年的浦項地震事件中，為一個警示：一座 EGS（增強型地熱系統）電廠的注水操作，被認為與規模 5.4 的地震有關，造成嚴重損失。這讓全球重新審視地熱開發的地質監測標準。這並不代表地熱是危險的，而是說明科學評估和透明監管是不可或缺的。</p>
+  <p class="body-text">相反地，冰島的 CarbFix 計劃則展示了地熱與碳封存結合的正向潛力——地熱發電廠不僅本身低碳，還能反過來成為吸碳的工具，成為氣候解方的雙重貢獻者。</p>
+</section>
+<div class="divider"></div>
+<!-- SECTION 5: REFLECTION -->
+<div class="reflection-bg" id="reflection">
+  <div class="reflection-wrap">
+    <p class="section-label">最終結語</p>
+    <h2 class="reflection-title">來自地底的思考</h2>
+    <div class="reflection-cards">
+      <div class="r-card">
+        <div class="r-card-head">
+          <div class="r-icon">🌏</div>
+          <div class="r-card-title">地球沉默了四十六億年，我們才開始傾聽</div>
+        </div>
+        <div class="r-card-body">研究地熱能源的過程中，我不斷被一種感受所震撼——我們腳下踩著的，是一台從宇宙誕生之初就持續運轉的巨型引擎。它不要求任何代價，也沒有排放問題，只是靜靜地等待著人類有一天願意俯身傾聽。而我們卻花了幾百年燃燒地球表面的有機物，才開始認真注視這股更深處的力量。這種對比讓我既感到惋惜，也覺得未來充滿希望。</div>
+      </div>
+      <div class="r-card">
+        <div class="r-card-head">
+          <div class="r-icon">🇹🇼</div>
+          <div class="r-card-title">台灣的地熱之殤：資源豐饒卻制度貧瘠</div>
+        </div>
+        <div class="r-card-body">台灣的地熱議題讓我感到一種複雜的焦慮。我們坐在環太平洋火環帶的前排，腳下的熱力不遜於冰島，卻因為法規的老舊、產業的競爭、政治的優先排序，讓這份潛力沉睡了半個世紀。看著能源缺口的討論一再上演——核電該不該延役？天然氣接收站該不該蓋？——我不禁想，地熱這個選項為什麼始終沒能佔到應有的席位？答案或許就在人性：地熱的益處是分散的、長期的、不容易圖示化；但它觸動的利益衝突卻是具體的、立即的、有名有姓的。這是能源轉型最難跨越的不是技術，而是政治與社會的攻防。</div>
+      </div>
+      <div class="r-card">
+        <div class="r-card-head">
+          <div class="r-icon">🌋</div>
+          <div class="r-card-title">冰島教會我的事：危機是最好的老師</div>
+        </div>
+        <div class="r-card-body">1973 年的石油危機，催生了冰島的地熱轉型。這讓我意識到，人類在轉型路上往往需要一個「夠痛的理由」才能行動。台灣的能源危機感，近年因俄烏戰爭、台海緊張局勢等因素而不斷升溫。如果這種緊迫感，能轉化為對地熱開發的具體政策推進，那或許，台灣也正處於自己的轉捩點之前。我對此抱持審慎的樂觀——不是因為問題已經解決，而是因為問題終於開始被認真對待。</div>
+      </div>
+      <div class="r-card">
+        <div class="r-card-head">
+          <div class="r-icon">🔬</div>
+          <div class="r-card-title">科技不是萬能，但無知才是真正的危險</div>
+        </div>
+        <div class="r-card-body">韓國浦項的案例提醒我，任何能源技術都必須在誠實、透明的科學框架下進行。地熱不是神話，它有其限制、有其風險、有其尚未解決的問題。我認為，正視這些不確定性，比過度浪漫化地熱更重要。公眾教育、資訊透明、科學監管——這些才是讓地熱真正服務社會的前提條件。我們不需要把地熱神化，我們需要的是誠實地對話。</div>
+      </div>
+      <div class="r-card">
+        <div class="r-card-head">
+          <div class="r-icon">💡</div>
+          <div class="r-card-title">結語：地球一直都在等我們</div>
+        </div>
+        <div class="r-card-body">地熱能源不是新概念，卻始終未能成為主流。在研究這個議題之後，我越來越相信，能源轉型的核心不是技術問題，而是想像力問題——我們能否想像一個不依賴燃燒的文明？一個從大地汲取生命力、而非從大地榨取資源的社會？地熱，或許是這種想像力最具說服力的現實例證之一。地球一直在那裡，蘊藏著足夠全人類使用的熱能，等著我們學會傾聽它的語言。</div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="footer-logo">地熱能源探索</div>
+  <p class="footer-note">本頁面為教育與研究目的製作，探討地熱能源的運作原理、社會效益、案例分析與個人省思</p>
+</footer>
+</body>
+</html>
